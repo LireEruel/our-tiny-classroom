@@ -1,0 +1,12 @@
+# /members/join
+
+POST 70.12.246.222/api/members/join
+Content-Type: application/json
+
+{
+  "memberId" : "gsd",
+  "password" : "asdasd",
+  "name" : "test",
+  "email": "test@gmail.com",
+  "birthday":"1995-09-11"
+}

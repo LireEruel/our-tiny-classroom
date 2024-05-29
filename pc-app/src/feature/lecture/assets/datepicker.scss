@@ -1,0 +1,45 @@
+$full-width : 100%;
+$lime-400: rgb(132 204 22);
+.react-datepicker__tab-loop {
+    width: $full-width;
+    position: absolute;
+}
+
+.react-datepicker {
+    width: $full-width;
+    min-height: 16rem;
+    
+}
+
+.react-datepicker-popper {
+    width: $full-width;
+}
+
+
+.react-datepicker__month-container {
+    width: $full-width;
+    height: 100%;
+}
+
+.react-datepicker__header  {
+    background-color: $lime-400;
+    .react-datepicker__current-month {
+        font-size: 1.2rem;
+    }
+    .react-datepicker__day-names {
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.react-datepicker__navigation-icon::before {
+    border-color: black;
+}
+
+.react-datepicker__week {
+    width: $full-width;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: space-between;
+}

@@ -1,0 +1,60 @@
+function PersonIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 28 29.00054561693014"
+      width="28"
+      height="29.00054561693014"
+      fill="none"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="28"
+        width="28"
+        viewBox="0 0 24 24"
+        fill="#030303"
+        x="0"
+        y="0.5002728084650716"
+        opacity="100%"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none"></path>
+        <path d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 10c2.7 0 5.8 1.29 6 2H6c.23-.72 3.31-2 6-2m0-12C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+      </svg>
+      <defs>
+        <filter
+          id="filter_dshadow_0_0_0_00000014"
+          colorInterpolationFilters="sRGB"
+          filterUnits="userSpaceOnUse"
+        >
+          <feFlood floodOpacity="0" result="bg-fix"></feFlood>
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="alpha"
+          ></feColorMatrix>
+          <feOffset dx="0" dy="0"></feOffset>
+          <feGaussianBlur stdDeviation="0"></feGaussianBlur>
+          <feComposite in2="alpha" operator="out"></feComposite>
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"
+          ></feColorMatrix>
+          <feBlend
+            mode="normal"
+            in2="bg-fix"
+            result="bg-fix-filter_dshadow_0_0_0_00000014"
+          ></feBlend>
+          <feBlend
+            in="SourceGraphic"
+            in2="bg-fix-filter_dshadow_0_0_0_00000014"
+            result="shape"
+          ></feBlend>
+        </filter>
+      </defs>
+    </svg>
+  );
+}
+
+export default PersonIcon;
