@@ -47,9 +47,7 @@ export const useChat = () => {
       const connectionData = new StompJs.Client({
         brokerURL: `ws://${SOCKET_URL}/stomp/chat`,
         connectHeaders: {
-          // Authorization: Cookies.get("accessToken") ?? "token",
-          Authorization:
-            "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwNzIwNDgyMiwibWVtYmVySWQiOjR9.Sa1_vk5e-jRxqeTlHpWPhgeqzQ2nZ9yEdActEOQvjXaiXc3Dv8Tqg4r1DyTwKMP2Hu7oboop-lvd6EEIEQI1ZQ",
+          Authorization: localStorage.getItem("accessToken"),
         },
         reconnectDelay: 5000, // 자동 재 연결
         heartbeatIncoming: 4000,
